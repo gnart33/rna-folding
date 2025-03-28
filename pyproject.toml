@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "rna-folding"
+version = "0.1.0"
+description = "RNA 3D Folding Prediction using Deep Learning"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = [{ include = "eda", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+numpy = "^1.24.0"
+pandas = "^2.0.0"
+matplotlib = "^3.7.0"
+seaborn = "^0.12.0"
+tensorflow = "^2.13.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
