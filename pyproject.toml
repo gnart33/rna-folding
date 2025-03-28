@@ -1,10 +1,12 @@
 [tool.poetry]
 name = "rna-folding"
+# packages = [{ include = "rnd_folding", from = "src" }]
+
 version = "0.1.0"
 description = "RNA 3D Folding Prediction using Deep Learning"
 authors = ["Your Name <your.email@example.com>"]
 readme = "README.md"
-packages = [{ include = "eda", from = "src" }]
+# packages = [{ from = "src" }]
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
@@ -13,6 +15,10 @@ pandas = "^2.0.0"
 matplotlib = "^3.7.0"
 seaborn = "^0.12.0"
 tensorflow = "^2.13.0"
+kaggle = "^1.7.4.2"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
